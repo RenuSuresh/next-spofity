@@ -1,4 +1,5 @@
 import Head from "next/head";
+import { Partytown } from "@builder.io/partytown/react";
 import Sidebar from "../components/Sidebar";
 import { Fragment } from "react";
 
