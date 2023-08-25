@@ -8,14 +8,7 @@ export default function Home() {
     <Fragment>
       <Head>
         <title>Spotify</title>
-        import { Html, Head, Main, NextScript } from 'next/document'
-import { Partytown } from '@builder.io/partytown/react';
-
-export default function Document() {
-  return (
-    <Html lang="en">
-      <Head >
-
+    
         <Partytown
           debug={true}
           forward={['dataLayer.push']}
@@ -35,14 +28,6 @@ export default function Document() {
           }}
         />
 
-      </Head>
-      <body>
-        <Main />
-        <NextScript />
-      </body>
-    </Html>
-  )
-}
 
       </Head>
       <div className="bg-black h-screen overflow-hidden">
