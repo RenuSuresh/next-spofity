@@ -9,6 +9,7 @@ export default function Document() {
           debug={true}
           forward={["dataLayer.push"]}
           resolveUrl={(url) => {
+            console.log("urls>>>>", url)
             if (url.pathname.includes('debug/bootstrap')) {
               var proxyUrl = new URL(
                 'https://visionary-daifuku-766501.netlify.app',
