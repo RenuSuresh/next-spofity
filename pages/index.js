@@ -9,7 +9,7 @@ export default function Home() {
     <Fragment>
       <Head>
         <title>Spotify</title>
-
+        {/* 
         <Partytown
           debug
           forward={['dataLayer.push', GTM_TAG_ASSISTANT_FORWARDER]}
@@ -28,7 +28,7 @@ export default function Home() {
       })(window,document,'script','dataLayer','GTM-TX77S2F');
     `,
           }}
-        />
+        /> */}
 
       </Head>
       <div className="bg-black h-screen overflow-hidden">
