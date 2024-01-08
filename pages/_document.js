@@ -8,17 +8,17 @@ export default function Document() {
         <Partytown
           debug={true}
           forward={["dataLayer.push"]}
-          resolveUrl={(url) => {
-            console.log("urls>>>>", url)
-            if (url.pathname.includes('debug/bootstrap')) {
-              var proxyUrl = new URL(
-                'https://visionary-daifuku-766501.netlify.app',
-              )
-              proxyUrl.searchParams.append('url', url)
-              return proxyUrl
-            }
-            return url
-          }}
+          // resolveUrl={(url) => {
+          //   console.log("urls>>>>", url)
+          //   if (url.pathname.includes('debug/bootstrap')) {
+          //     var proxyUrl = new URL(
+          //       'https://visionary-daifuku-766501.netlify.app',
+          //     )
+          //     proxyUrl.searchParams.append('url', url)
+          //     return proxyUrl
+          //   }
+          //   return url
+          // }}
           set={(opts) => {
             const isDebugging = opts?.window?.location?.search.includes("gtm_debug");
 
